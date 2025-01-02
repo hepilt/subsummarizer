@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, select, button {
+      margin-bottom: 15px;
+      padding: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #FF0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Settings</h1>
+  <label for="apiKey">OpenAI API Key:</label>
+  <input type="text" id="apiKey" placeholder="Enter your API key">
+
+  <label for="language">Subtitle Language (e.g., en, es):</label>
+  <input type="text" id="language" value="en" placeholder="Enter language code (e.g., en)">
+
+  <label for="gptVersion">GPT Version:</label>
+  <input type="text" id="gptVersion" value="gpt-4o-mini">
+  
+  <label for="sysPrompt">System Prompt</label>
+  <input type="text" id="sysPrompt">
+  <div></div>
+
+  <button id="saveSettings">Save Settings</button>
+
+  <script src="options.js"></script>
+</body>
+</html>

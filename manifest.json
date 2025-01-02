@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Video Summarizer",
+    "version": "1.4",
+    "description": "Extracts subtitles from YouTube videos and generates a summary using ChatGPT.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://www.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "options_page": "options.html",
+    "action": {
+        "default_icon": "icon.png"
+    }
+}
