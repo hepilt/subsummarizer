@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     saveButton.addEventListener("click", () => {
       const apiKey = apiKeyInput.value.trim();
       const language = languageInput.value.trim();
-      const gptVersion = gptVersionInput.value;
+      const gptVersion = gptVersionInput.value.trim();
       const sysPrompt = sysPromptInput.value;
   
       chrome.storage.sync.set({ apiKey, language, gptVersion, sysPrompt }, () => {
